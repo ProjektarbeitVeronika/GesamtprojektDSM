@@ -7,4 +7,4 @@ jdk:
 script:
 - cd src
 - cd jUnitTests
-- javac Gui.java
+- javac SuperTest.java
