@@ -1,4 +1,4 @@
-package jUnitTests;
+﻿package jUnitTests;
 
 import java.awt.AWTEvent;
 import java.awt.BorderLayout;
@@ -27,7 +27,7 @@ public class Gui extends JFrame implements ActionListener{
 		setSize(500,500);
 		setVisible(true);
 		enableEvents(AWTEvent.WINDOW_EVENT_MASK); 
-		init();	
+		init();	thgtdgtf
 	}
 	
 	private void init(){
