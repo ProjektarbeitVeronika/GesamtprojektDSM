@@ -1,4 +1,4 @@
-﻿package jUnitTests;
+package jUnitTests;
 
 import java.awt.AWTEvent;
 import java.awt.BorderLayout;
