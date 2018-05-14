@@ -12,5 +12,5 @@ addons:
 script:
 - cd src
 - cd jUnitTests
-- javac SuperTest.java
-- javac Gui.java mainMethode.java
+- javac *.java
+
