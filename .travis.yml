@@ -4,7 +4,7 @@ jdk:
   - oraclejdk8
   
 
-before_install:
+script:
 - cd src
 - cd jUnitTests
 - javac Gui.java
