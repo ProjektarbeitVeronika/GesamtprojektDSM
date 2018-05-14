@@ -1,4 +1,4 @@
-package jUnitTests;
+package testJUnitTests;
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,8 @@ import java.math.BigDecimal;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import jUnitTests.SuperTest;
 
 public class SuperTestTest {
 	
