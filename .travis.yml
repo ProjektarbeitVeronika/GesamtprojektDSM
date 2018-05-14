@@ -13,5 +13,5 @@ script:
 - cd src
 - cd jUnitTests
 - javac SuperTest.java
-- javac mainMethode.java
 - javac Gui.java
+- javac mainMethode.java
