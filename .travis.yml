@@ -18,5 +18,6 @@ script:
 - cd src
 - cd jUnitTests
 - javac *.java
-- cd /testsrc/testJUnitTests
+- cd testsrc
+- cd testJUnitTests
 - javac *.java
