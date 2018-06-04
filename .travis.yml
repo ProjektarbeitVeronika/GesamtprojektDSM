@@ -3,6 +3,11 @@ language: java
 jdk:
   - oraclejdk8
 
+# safelist
+branches:
+  only:
+  - master
+
 addons:
   apt:
     packages:
@@ -13,9 +18,5 @@ script:
 - cd src
 - cd jUnitTests
 - javac *.java
-
-# safelist
-branches:
-  only:
-  - master
-
+- cd /testsrc/testJUnitTests
+- javac *.java
