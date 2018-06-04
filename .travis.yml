@@ -1,0 +1,24 @@
+language: java
+
+jdk:
+  - oraclejdk8
+  
+# safelist
+branches:
+  only:
+  - master
+
+addons:
+  apt:
+    packages:
+      - language-pack-en
+      - language-pack-de
+
+script:
+- ls
+- cd src/jUnitTests
+- javac *.java
+- echo $CLASSPATH
+- export CLASSPATH = .:junit.jar:$CLASSPATH
+
+# lesezeichen zum weiter machen 
