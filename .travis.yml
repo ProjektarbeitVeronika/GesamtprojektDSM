@@ -18,7 +18,7 @@ script:
 - ls
 - cd src/jUnitTests
 - javac *.java
-- export CLASSPATH= /C:/Program' 'Files/ECLIPSE.450/plugins/:junit.jar:hamcrest-core.jar:$CLASSPATH 
-- java org.junit.runner.JUnitCore GuiTest.java
+- javac -cp /usr/lib/jvm/junit4.jar GuiTest.java
+- java -cp /usr/lib/jvm/junit4.jar:. org.junit.runner.JUnitCore GuiTest.java
 
 # lesezeichen zum weiter machen 
