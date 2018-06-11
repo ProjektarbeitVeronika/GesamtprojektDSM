@@ -18,7 +18,7 @@ script:
 - ls
 - cd src/jUnitTests
 - javac *.java
-- % echo $CLASSPATH
-
+- export CLASSPATH=.:junit.jar
+- java org.junit.runner.JUnitCore GuiTest.java
 
 # lesezeichen zum weiter machen 
