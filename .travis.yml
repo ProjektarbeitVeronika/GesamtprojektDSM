@@ -18,7 +18,8 @@ script:
 - ls
 - cd src/jUnitTests
 - javac *.java
-- javac -cp /usr/lib/junit4.jar GuiTest.java
-- java -cp /usr/lib/junit4.jar:. org.junit.runner.JUnitCore GuiTest.java
+- export CLASSPATH=$CLASSPATH:$JUNIT_HOME/junit.jar
+- cd testsrc/testJUnitTests
+- java org.junit.runner.JUnitCore GuiTest.java 
 
 # lesezeichen zum weiter machen 
