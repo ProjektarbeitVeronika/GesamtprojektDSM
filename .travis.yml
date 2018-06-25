@@ -13,8 +13,7 @@ addons:
       - oracle-java8-installer
 
 script:
-- echo $PWD
-- export CLASSPATH=.:Gesamtprojekt/lib/commons-math3-3.6.1.jar
+- export CLASSPATH=.:/Gesamtprojekt/lib/commons-math3-3.6.1.jar
 - cd src/jUnitTests
 - javac *.java
 - cd ../algorithm
