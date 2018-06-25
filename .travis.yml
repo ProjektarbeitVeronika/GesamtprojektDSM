@@ -13,9 +13,9 @@ addons:
       - oracle-java8-installer
 
 script:
-- echo $CLASSPATH
+- export CLASSPATH=.:lib/*
 - cd src/jUnitTests
-- javac -cp "./lib/commons-math3-3.6.1.jar" *.java
+- javac *.java
 - cd ../algorithm
 - javac -cp "./lib/commons-math3-3.6.1.jar" *.java
 - cd ../../testsrc/testJUnitTests
