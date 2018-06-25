@@ -13,11 +13,10 @@ addons:
       - oracle-java8-installer
 
 script:
-- java -cp "./lib/commons-math3-3.6.1.jar" 
 - cd src/jUnitTests
-- javac *.java
+- javac -cp "./lib/commons-math3-3.6.1.jar" *.java
 - cd ../algorithm
-- javac *.java
+- javac -cp "./lib/commons-math3-3.6.1.jar" *.java
 - cd ../../testsrc/testJUnitTests
 - java org.junit.runner.JUnitCore GuiTest.java 
 
