@@ -14,9 +14,9 @@ addons:
 
 script:
 - cd src/jUnitTests
-- javac -cp /lib/commons-math3-3.6.1.jar:. *.java
+- javac -cp ./lib/commons-math3-3.6.1.jar:. *.java
 - cd ../algorithm
-- javac -cp ./lib/commons-math3-3.6.1.jar *.java
+- javac -cp lib/commons-math3-3.6.1.jar:. *.java
 
 
 #lesezeichenexport CLASSPATH=.:lib/*
