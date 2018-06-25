@@ -13,12 +13,10 @@ addons:
       - oracle-java8-installer
 
 script:
-- export CLASSPATH=.:lib/*
 - cd src/jUnitTests
-- javac *.java
+- javac -cp /lib/commons-math3-3.6.1.jar:. *.java
 - cd ../algorithm
-- javac *.java
-- cd ../../testsrc/testJUnitTests
-- java org.junit.runner.JUnitCore GuiTest.java 
+- javac -cp ./lib/commons-math3-3.6.1.jar *.java
 
-#lesezeichen
+
+#lesezeichenexport CLASSPATH=.:lib/*
