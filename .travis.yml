@@ -3,8 +3,7 @@ language: java
 jdk:
   - oraclejdk8
   
- before_install:
-  - sudo apt-get update 
+
 
 addons:
   apt:
@@ -19,8 +18,7 @@ script:
 - javac *.java
 - cd ../algorithm
 - javac *.java
-
 - cd ../../testsrc/testJUnitTests
 - java org.junit.runner.JUnitCore GuiTest.java 
 
-# lesezeichen zum weiter machen - java -cp "$PROJECT_LOC/*"
+#lesezeichen
