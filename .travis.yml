@@ -3,20 +3,18 @@ language: java
 jdk:
   - oraclejdk8
   
-# safelist
-branches:
-  only:
-  - master
 
 addons:
   apt:
     packages:
       - language-pack-en
       - language-pack-de
+      - oracle-java8-installer
 
 script:
-- ls
 - cd src/jUnitTests
+- javac *.java
+- cd ../algorithm
 - javac *.java
 - export CLASSPATH=$CLASSPATH:$JAVA_HOME/junit.jar
 - cd ../../testsrc/testJUnitTests
