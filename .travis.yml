@@ -14,7 +14,7 @@ addons:
 
 script:
 - export CLASSPATH=.:/Gesamtprojekt/lib/commons-math3-3.6.1.jar
-- javac -sourcepath .:/Gesamtprojekt/src *.java
+- javac -sourcepath -help
 - cd src/jUnitTests
 - javac *.java
 - cd ../algorithm
