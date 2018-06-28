@@ -14,9 +14,9 @@ addons:
 
 script:
 - cd src/jUnitTests
-- java *.java
+- javac *.java
 - cd ../algorithm
-- javac -cp ".:lib/*" Measurement.java
+- javac -cp ".:src/lib/*" Measurement.java
 
 
 #lesezeichenexport CLASSPATH=.:lib/*  export CLASSPATH=$CLASSPATH:$PWD/lib:$PWD/src
