@@ -32,7 +32,6 @@ import com.sun.glass.events.KeyEvent;
 import javax.swing.filechooser.FileFilter;
 import java.net.*;
 import inputOutput.*;
-import testInputOutput.*;
 
 public class Gui extends JFrame implements ActionListener {
 
@@ -288,7 +287,7 @@ public class Gui extends JFrame implements ActionListener {
 				value = true;
 				begin.setExit(false);
 				data.setCount();
-				testInputOutput.Networkconnection_test_app.setCount();
+//				testInputOutput.Networkconnection_test_app.setCount();
 			}
 
 			else if (src == measurementtyp) {
