@@ -16,12 +16,16 @@ script:
 - export CLASSPATH=$PWD/lib/*:$PWD/src/:$CLASSPATH
 - cd src/jUnitTests
 - javac *.java
+- java *.java
 - cd ../algorithm
 - javac *.java
+- java *.java
 - cd ../inputOutput
 - javac *.java
+- java *.java
 - cd ../userinterface
 - javac *.java
+- java *.java
 
 
 #lesezeichenexport CLASSPATH=.:lib/*  export CLASSPATH=$CLASSPATH:$PWD/lib:$PWD/src
