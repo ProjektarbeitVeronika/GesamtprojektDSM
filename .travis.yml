@@ -13,7 +13,7 @@ addons:
       - oracle-java8-installer
 
 script:
-- export CLASSPATH=$PWD/lib/*:$PWD/src/:.:$CLASSPATH
+- export CLASSPATH=$PWD/lib/*:$PWD/src/:.:$PWD/testsrc/:$CLASSPATH
 - cd src/mainMethod
 - javac *.java
 - java *.java
