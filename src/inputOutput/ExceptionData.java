@@ -1,6 +1,6 @@
 package inputOutput;
 
-//import testInputOutput.Exception_Window;
+import testInputOutput.Exception_Window;
 
 public class ExceptionData {
 
@@ -14,21 +14,21 @@ public class ExceptionData {
 
 		case 0:
 			if (CSVFileReader.getLine_counter() == 0) {
-//				Exception_Window.setExceptionText("Data is empty");
+				Exception_Window.setExceptionText("Data is empty");
 				
 
 			} else {
-//				Exception_Window.setExceptionText("end of file");
+				Exception_Window.setExceptionText("end of file");
 				
 			}
 			break;
 
 		case 1:// must be changed to the right methodname of group userinterface
 				// when implemented
-//			Exception_Window.setExceptionText("Data was not found");
+			Exception_Window.setExceptionText("Data was not found");
 			
 			break;
-//		default: testInputOutput.Exception_Window.startExceptionWindow();
+		default: testInputOutput.Exception_Window.startExceptionWindow();
 
 		}
 
