@@ -14,7 +14,7 @@ addons:
 
 script:
 - script:
-- export CLASSPATH=$PWD/lib/:$CLASSPATH
+- export CLASSPATH=$PWD/lib/*:$CLASSPATH
 - cd src/jUnitTests
 - javac *.java
 - cd ../algorithm
