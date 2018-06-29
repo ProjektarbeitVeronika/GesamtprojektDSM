@@ -13,8 +13,7 @@ addons:
       - oracle-java8-installer
 
 script:
-- script:
-- export CLASSPATH=$PWD/lib/*:$CLASSPATH
+- export CLASSPATH=$PWD/lib/*:$PWD/src/inputOutput:$CLASSPATH
 - cd src/jUnitTests
 - javac *.java
 - cd ../algorithm
