@@ -19,7 +19,7 @@ script:
 - javac *.java
 - cd ../userinterface
 - javac *.java
-- cd ../../testalgorithm
+- cd ../../testsrc/testalgorithm
 - javac *.java
 - cd ../testInputOutput
 - javac *.java
