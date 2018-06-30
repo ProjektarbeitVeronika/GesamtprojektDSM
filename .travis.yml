@@ -10,7 +10,7 @@ addons:
       - language-pack-de
       - oracle-java8-installer
 script:
-- export DISPLAY=:0.0
+- export DISPLAY=:0
 - export CLASSPATH=$PWD/lib/*:$PWD/src/:$PWD/testsrc/:$CLASSPATH:.
 - cd src/mainMethod
 - javac *.java
