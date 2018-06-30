@@ -26,10 +26,12 @@ script:
 - cd ../testUserinterface
 - javac *.java
 - cd ../..
-- java mainMethod.main
-- java algorithm.AverageMeasurement
-- java algorithm.BoxPlot
-- java algorithm.DataManager
+- java mainMethod.main1
+- cd ../testsrc
+- java testalgorithm.AlgorithmTest
+- java testalgorithm.AlgorithmTest2
+- java testalgorithm.ProgramLogicTest
+- java testInputOutput.CSV_File_is_Empty_Test
 
 #lesezeichenexport CLASSPATH=.:lib/*  export CLASSPATH=$CLASSPATH:$PWD/lib:$PWD/src
 # home: /home/travis  - oracle-java8-installer
