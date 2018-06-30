@@ -16,9 +16,9 @@ script:
 - export CLASSPATH=$PWD/lib/*:$PWD/src/:$PWD/testsrc/:$CLASSPATH:.
 - cd src/mainMethod
 - javac *.java
-- java *.java
+- java *
 - cd ../algorithm
-- javac *.java
+- javac *
 - java *.java
 - cd ../inputOutput
 - javac *.java
