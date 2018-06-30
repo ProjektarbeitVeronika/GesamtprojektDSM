@@ -14,19 +14,18 @@ addons:
 
 script:
 - export CLASSPATH=$PWD/lib/*:$PWD/src/:$PWD/testsrc/:$CLASSPATH:.
-- mkdir bin
 - cd src/mainMethod
-- javac -d bin *.java
-#- java bin/*
+- javac *.java
+- java *
 - cd ../algorithm
-- javac -d bin *.java
-#- java *.java
+- javac *.java
+- java *
 - cd ../inputOutput
-- javac -d bin *.java
-#- java *.java
+- javac *.java
+- java *
 - cd ../userinterface
-- javac -d bin *.java
-#- java *.java
+- javac *.java
+- java *
 
 
 #lesezeichenexport CLASSPATH=.:lib/*  export CLASSPATH=$CLASSPATH:$PWD/lib:$PWD/src
