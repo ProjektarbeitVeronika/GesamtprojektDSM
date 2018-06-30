@@ -27,7 +27,9 @@ script:
 - javac *.java
 - cd ../..
 - java mainMethod.main
-- java algorithm.*
+- java algorithm.AverageMeasurement
+- java algorithm.BoxPlot
+- java algorithm.DataManager
 
 #lesezeichenexport CLASSPATH=.:lib/*  export CLASSPATH=$CLASSPATH:$PWD/lib:$PWD/src
 # home: /home/travis  - oracle-java8-installer
