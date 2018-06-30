@@ -10,6 +10,7 @@ addons:
       - language-pack-de
       - oracle-java8-installer
 script:
+- export DISPLAY=:0.0
 - export CLASSPATH=$PWD/lib/*:$PWD/src/:$PWD/testsrc/:$CLASSPATH:.
 - cd src/mainMethod
 - javac *.java
@@ -27,7 +28,6 @@ script:
 - javac *.java
 - cd ../..
 - java mainMethod.main1
-- cd ../testsrc
 - java testalgorithm.AlgorithmTest
 - java testalgorithm.AlgorithmTest2
 - java testalgorithm.ProgramLogicTest
